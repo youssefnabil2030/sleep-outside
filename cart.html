@@ -7,10 +7,19 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f6f9;
       margin: 0;
       padding: 20px;
+      /* Background الجديد */
+      background: #2A7B9B;
+      background: linear-gradient(
+        90deg,
+        rgba(42, 123, 155, 1) 0%,
+        rgba(87, 199, 133, 1) 50%,
+        rgba(237, 221, 83, 1) 100%
+      );
+      min-height: 100vh;
     }
+
     .container {
       max-width: 650px;
       margin: auto;
@@ -19,10 +28,12 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
+
     h1 {
       text-align: center;
       color: #333;
     }
+
     input, textarea, button, select {
       width: 100%;
       padding: 12px;
@@ -31,13 +42,16 @@
       border: 1px solid #ccc;
       box-sizing: border-box;
     }
+
     #search {
       margin-bottom: 15px;
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     li {
       background: #f9f9f9;
       padding: 12px;
@@ -48,9 +62,11 @@
       border-radius: 6px;
       transition: background 0.3s;
     }
+
     li.overdue { background: #ffdddd; }
     li.due-soon { background: #fff2cc; }
     li.completed { text-decoration: line-through; color: gray; background: #d4edda; }
+
     .buttons button {
       margin-left: 6px;
       padding: 6px 12px;
@@ -59,7 +75,9 @@
       cursor: pointer;
       transition: 0.2s;
     }
+
     .buttons button:hover { opacity: 0.8; }
+
     .done-btn { background: #28a745; color: #fff; }
     .delete-btn { background: #dc3545; color: #fff; }
   </style>
